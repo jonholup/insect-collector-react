@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-export default class Upload extends Component {
+export default class Landing extends Component {
   render() {
     return (
       <div>
-        <h1>Upload</h1>
+        <h1>Landing</h1>
         <button onClick={() => console.log('hi')} className="block">
-          Upload
+          Hi
         </button>
       </div>
     );

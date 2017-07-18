@@ -10,7 +10,7 @@ node_modules
 /build
 
 # firebase
-src/config/constants.js
+src/config/firebase.js
 
 # misc
 .DS_Store
