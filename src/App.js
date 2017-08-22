@@ -7,7 +7,7 @@ import CurrentUser from './CurrentUser';
 import './App.css';
 import logo from './logo.jpg';
 
-class App extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -30,11 +30,11 @@ class App extends Component {
         <div className="App">
           <div className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h2>Insect Collector</h2>
+            <h2 id="InsectCollector">Insect Collector</h2>
           </div>
           {user
             ? <div>
-                <Nav />
+                <Nav user={user} />
                 <hr />
 
                 <CurrentUser user={user} />
@@ -45,5 +45,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

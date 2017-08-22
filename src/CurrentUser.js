@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { auth } from '../src/config/firebase';
 import './CurrentUser.css';
+import Button from 'antd/lib/button';
 
 const CurrentUser = ({ user }) => {
   return (
@@ -18,9 +19,13 @@ const CurrentUser = ({ user }) => {
         <p className="CurrentUser--email">
           {user.email}
         </p>
-        <button className="CurrentUser--signout" onClick={() => auth.signOut()}>
+        <Button
+          type="danger"
+          className="CurrentUser--signout"
+          onClick={() => auth.signOut()}
+        >
           Sign Out
-        </button>
+        </Button>
       </div>
     </div>
   );

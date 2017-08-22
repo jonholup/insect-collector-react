@@ -15,7 +15,11 @@
   font-family: 'Faster One';
   height: 150px;
   padding: 20px;
-  color: white;
+  color: whitesmoke;
+}
+
+#InsectCollector {
+  color: red;
 }
 
 .App-intro {
